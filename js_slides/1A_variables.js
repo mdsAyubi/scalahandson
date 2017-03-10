@@ -1,5 +1,5 @@
 
-//ES5 Varable Declaration: Hoisted
+//ES5 Variable Declaration: Hoisted
 function getValue(condition) {
     if (condition) {
         var value = "blue";

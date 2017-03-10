@@ -49,44 +49,44 @@
 
 //2. New Methods in Arrays
 
-//find and findIndex
+  //find and findIndex
 
-let numbers = [25, 30, 35, 40, 45];
+  let numbers = [25, 30, 35, 40, 45];
 
-console.log(numbers.find(n => n > 33));         // 35
-console.log(numbers.findIndex(n => n > 33));    // 2
+  console.log(numbers.find(n => n > 33));         // 35
+  console.log(numbers.findIndex(n => n > 33));    // 2
 
-//fill : The fill() method fills one or more array elements with a specific value
+  //fill : The fill() method fills one or more array elements with a specific value
 
-let numbers = [1, 2, 3, 4];
-numbers.fill(1);
-numbers.fill(1, 2); //optional start index
-numbers.fill(0, 1, 3); //optional end index
-console.log(numbers.toString());    // 1,1,1,1
+  let numbers = [1, 2, 3, 4];
+  numbers.fill(1);
+  numbers.fill(1, 2); //optional start index
+  numbers.fill(0, 1, 3); //optional end index
+  console.log(numbers.toString());    // 1,1,1,1
 
-//copyWithin()
+  //copyWithin()
 
-//The copyWithin() method is similar to fill() in that it changes multiple array elements at the same time.
+  //The copyWithin() method is similar to fill() in that it changes multiple array elements at the same time.
 
-let numbers = [1, 2, 3, 4];
-// paste values into array starting at index 2
-// copy values from array starting at index 0
-numbers.copyWithin(2, 0);
-console.log(numbers.toString());    // 1,2,1,2
-
-
-//One more thing...
-
-//Template strings...useful
-
-let name = "ABC",
-    message = `Hello, ${name}.`;
-
-console.log(message);       // "Hello, Nicholas."
+  let numbers = [1, 2, 3, 4];
+  // paste values into array starting at index 2
+  // copy values from array starting at index 0
+  numbers.copyWithin(2, 0);
+  console.log(numbers.toString());    // 1,2,1,2
 
 
-let count = 10,
-    price = 0.25,
-    message = `${count} items cost $${(count * price).toFixed(2)}.`;
+  //One more thing...
 
-console.log(message);       // "10 items cost $2.50."
+  //Template strings...useful
+
+  let name = "ABC",
+      message = `Hello, ${name}.`;
+
+  console.log(message);       // "Hello, Nicholas."
+
+
+  let count = 10,
+      price = 0.25,
+      message = `${count} items cost $${(count * price).toFixed(2)}.`;
+
+  console.log(message);       // "10 items cost $2.50."
